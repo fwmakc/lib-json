@@ -1,0 +1,93 @@
+export default [
+  {
+    data: {},
+    spaces: undefined,
+    ref: '{}',
+    displayValue: '{}',
+  },
+  {
+    data: [],
+    spaces: undefined,
+    ref: '[]',
+    displayValue: '[]',
+  },
+  {
+    data: { a: 1 },
+    spaces: undefined,
+    ref: '{"a":1}',
+    displayValue: '{ a: 1 }',
+  },
+  {
+    data: { a: 1, b: 2, c: 3 },
+    spaces: undefined,
+    ref: '{"a":1,"b":2,"c":3}',
+    displayValue: '{ a: 1, b: 2, c: 3 }',
+  },
+  {
+    data: { a: 1, b: 2, c: 3 },
+    spaces: 2,
+    ref: '{\n  "a": 1,\n  "b": 2,\n  "c": 3\n}',
+    displayValue: '{ a: 1, b: 2, c: 3 }',
+  },
+  {
+    data: [1, 2, 3],
+    spaces: undefined,
+    ref: '[1,2,3]',
+    displayValue: '[1, 2, 3]',
+  },
+  {
+    data: ['a', 'b', 'c'],
+    spaces: undefined,
+    ref: '["a","b","c"]',
+    displayValue: "['a', 'b', 'c']",
+  },
+  {
+    data: ['a', 'b', 'c'],
+    spaces: 2,
+    ref: '[\n  "a",\n  "b",\n  "c"\n]',
+    displayValue: "['a', 'b', 'c']",
+  },
+  {
+    data: {
+      a: 'ABCdef',
+      b: 123,
+      c: '123',
+      d: '',
+      e: null,
+      f: true,
+      g: false,
+      h: [1, 2, 3],
+      i: ['1', '2', '3'],
+      j: ['a', 'b', 'c'],
+      k: { a: 1, b: 2, c: 3 },
+    },
+    spaces: undefined,
+    ref: '{"a":"ABCdef","b":123,"c":"123","d":"","e":null,"f":true,"g":false,"h":[1,2,3],"i":["1","2","3"],"j":["a","b","c"],"k":{"a":1,"b":2,"c":3}}',
+    displayValue:
+      "{ a: 'ABCdef', b: 123, c: '123', d: '', e: null, f: true, g: false, h: [1, 2, 3], i: ['1', '2', '3'], j: ['a', 'b', 'c'], k: { a: 1, b: 2, c: 3 }}",
+  },
+  {
+    data: 123,
+    spaces: undefined,
+    ref: '',
+    displayValue: '[with errors] 123',
+  },
+  {
+    data: 'abc',
+    spaces: undefined,
+    ref: '',
+    displayValue: '[with errors] abc',
+  },
+  {
+    data: true,
+    spaces: undefined,
+    ref: '',
+    displayValue: '[with errors] true',
+  },
+  {
+    data: false,
+    spaces: undefined,
+    ref: '',
+    displayValue: '[with errors] false',
+  },
+];
